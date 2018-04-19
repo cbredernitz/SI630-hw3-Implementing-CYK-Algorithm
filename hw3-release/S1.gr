@@ -1,0 +1,98 @@
+# The start symbol is TOP.
+
+# These two rules are required; choose their weights carefully!
+99  TOP  S1
+1   TOP  S2
+
+# This is a very, very, very simple grammar to get you started.
+
+10   S1   NP VP
+10   S1   NP _VP
+1   _VP  VP Punc
+1   VP   VBZ NP
+
+20  NP   DT Nbar
+1   NP   Proper
+1   NP   NN PP
+
+10  Nbar NN
+1   Nbar Nbar PP
+
+1   PP   PRP NP
+
+# Below are the grammar rules we came up with
+
+1    S1    PRP VP
+1    S1    PRP VP
+1    S1    VB JJ
+1    S1    PRP S1
+1    S1    NNP VP
+1    S1    TO  S1
+
+1    RB    S1 CC
+1    RB    S1 IN
+
+1    NP    JJ NN
+1    NP    JJ NNP
+1    NP    DT NP
+1    NP    CD NN
+1    NP    CD NNS
+1    NP    NNP S1
+1    NP    NP NNP
+1    NP    NN PRP$
+1    NP    NN DT
+1    NP    NNP VB
+1    NP    NNP VBZ
+1    NP    DT NN
+1    NP    VP NNP
+1    NP    JJ NNS
+1    NP    NNP _Punc
+
+1    VP    NP VBZ
+1    VP    MD VB
+1    VP    VB S1
+1    VP    VBZ_ NP
+1    VP    _VBZ NP
+1    VP    EX EOSPuncE
+1    VP    VB VP
+1    VP    VBD NPD
+1    VP    VBD NP
+1    VP    VB VBN
+
+1    PP    PRP DT
+1    VB    VB PP
+
+1    DT    NN JJ
+
+#  QUESTIONS
+
+1    SQ    VBZ NP
+1    SQ    NP VP
+1    SBarQ    EOSPuncQ SQ
+
+
+# PLURAL BELOW
+1    NPD   DT NP
+1    VBZ_  VBZ TO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# in case you use S1.gr by itself
+1   S2   Misc

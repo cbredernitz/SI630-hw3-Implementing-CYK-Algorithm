@@ -1,0 +1,484 @@
+# This is a hand-generated set of pre-terminal rules.
+# It specifies a simple tag set which will be handled by the S2
+# grammar and which can (though doesn't necessarily need to be)
+# handled by the S1 grammar.
+#
+# The weights given here may be changed, but no new vocabulary
+# items are to be added.
+
+# Miscellaneous items that don't fit into any of our simple tags are
+# given to Misc.  You will want to develop your own tags for these!
+
+# Punctuations
+1   EOSPunc    .
+# End-of-sentence.
+1    EOSPuncE    !
+5    EOSPunc    .
+1    EOSPuncQ    ?
+
+# Pauses.
+2    _Punc    ,
+1    Punc    ...
+1    Punc    --
+1    Punc    ;
+1    Punc    :
+
+# Singular and mass nouns.  Notice that only the
+# ones that start with consonants get our Noun tag.
+1    NN    castle
+1    NN    king
+1    NN    defeater
+1    NN    sovereign
+1    NN    servant
+1    NN    corner
+1    NN    land
+1    NN    quest
+1    NN    chalice
+1    NN    master
+1    NN    horse
+1    NN    fruit
+1    NN    swallow
+1    NN    sun
+1    NN    winter
+1    NN    coconut
+1    NN    pound
+1    NN    husk
+1    NN    home
+1    NN    weight
+1    NN    story
+1    NN    man
+1    NN    mother
+1    NN    nose
+1    NN    officer
+1    NN    peasant
+1    NN    person
+1    NN    place
+1    NN    purpose
+1    NN    bink
+1    NN    man
+1    NN    mother
+1    NN    nose
+1    NN    officer
+1    NN    peasant
+1    NN    person
+1    NN    place
+1    NN    purpose
+1    NN    dictatorship
+1    NN    victory
+1    NN    thought
+1    NN    pansy
+1    NN    scimitar
+2    NN    witch
+1    NN    strength
+2    NN    system
+1    NN    taunt
+2    NN    violence
+1    NN    emperor
+1    NN    loony
+1    NN    meeting
+
+# Proper nouns.  Note that our Proper tag is just for people.
+1    NNP    Arthur
+1    NNP    Guinevere
+1    NNP    _Sir _Lancelot
+1    NNP    _Sir _Bedevere
+1    NNP    _Sir _Knight
+1    NNP    Zoot
+1    NNP    Dingo
+1    NNP    Patsy
+1    NNP    _Uther _Pendragon
+1    _Sir      Sir
+1    _Lancelot Lancelot
+1    _Bedevere Bedevere
+1    _Uther    Uther
+1    _Pendragon Pendragon
+1    _Knight   Knight
+
+# Plural nouns.
+1    NNS    coconuts
+1    NNS    halves
+1    NNS    snows
+1    NNS    mountains
+1    NNS    areas
+1    NNS    strangers
+1    NNS    inches
+1    NNS    snakes
+1    NNS    ants
+1    NNS    nights
+1    NNS    knnnniggets
+1    NNS    legs
+1    NNS    men
+1    NNS    decisions
+1    NNS    knnnniggets
+1    NNS    legs
+
+# More proper nouns, not people.
+
+1    NNP    Camelot
+1    NNP    England
+1    NNP    _Holy _Grail
+1    _Holy   Holy
+1    _Grail  Grail
+1    NNP    _Round _Table
+1    _Round  Round
+1    _Table  Table
+1    NNP     Arthur-king
+1    NNP     English
+1    NNP     God
+1    NNP     King
+1    NNP     Quest
+
+# Plural proper nouns.
+1    NNPS    Britons
+1    NNPS    Saxons
+
+# Determiners.
+1    DT    a
+1    DT    another
+1    DT    any
+1    DT    each
+1    DT    every
+1    DT    no
+1    DT    that
+1    DT    the
+1    DT    this
+2    DT    an
+3    PDT   all
+1    PDT   some
+1    PDT   many
+
+# Prepositions.
+1    IN    above
+1    IN    across
+1    IN    at
+1    IN    below
+1    IN    by
+1    IN    for
+1    IN    from
+1    IN    into
+1    IN    near
+1    IN    of
+1    IN    on
+1    IN    over
+1    IN    through
+1    IN    with
+1    IN    with
+3    IN    in
+
+# Subordinating conjunctions.
+1    IN    that
+1    IN    so
+1    IN    while
+1    IN    because
+1    IN    if
+
+# Coordinating conjunctions.
+1    CC    and
+1    CC    but
+1    CC    or
+1    CC    either
+1    CC    nor
+1    CC    neither
+1    CC    so
+
+# Numbers.
+1    CD    eight
+1    CD    five
+1    CD    one
+1    CD    5.5
+1    CD    sixty
+1    CD    5,000
+1    CD    seven
+1    CD    thirty
+
+# Expletive.
+1    EX    there
+
+# Modals.
+1    MD    can
+1    MD    could
+1    MD    may
+1    MD    might
+1    MD    must
+1    MD    ought
+1    MD    shall
+1    MD    should
+1    MD    will
+1    MD    would
+
+# Adjectives.
+1    JJ    bloody
+1    JJ    weary
+1    JJ    unable
+1    JJ    trusty
+1    JJ    further
+1    JJ    sacred
+1    JJ    tropical
+1    JJ    indigenous
+1    JJ    temperate
+1    JJ    hot
+1    JJ    lucky
+1    JJ    simple
+1    JJ    tiny
+1    JJ    hard
+1    JJ    sensational
+1    JJ    comparable
+1    JJ    angolian
+1    JJ    yellow
+1    JJ    plodding
+2    JJ    second
+1    JJ    repressed
+1    JJ    right
+2    JJ    silly
+1    JJ    so-called
+1    JJ    quiet
+1    JJ    special
+1    JJ    strange
+1    JJ    anarcho-syndicalist
+1    JJ    charged
+1    JJ    other
+1    JJ    found
+1    JJ    dead
+1    JJ    just
+1    JJ    old
+2    JJ    inherent
+1    JJ    happy
+1    JJ    biweekly
+
+# Comparative adjectives.
+1    JJR    bloodier
+1    JJR    wearier
+1    JJR    trustier
+1    JJR    hotter
+1    JJR    simpler
+1    JJR    tinier
+1    JJR    harder
+
+# Superlative adjectives.
+1    JJS    bloodiest
+1    JJS    weariest
+1    JJS    trustiest
+1    JJS    hottest
+1    JJS    simplest
+1    JJS    tiniest
+1    JJS    hardest
+
+
+# Personal pronouns.
+1    PRP    I
+1    PRP    he
+1    PRP    her
+1    PRP    him
+1    PRP    it
+1    PRP    one
+1    PRP    she
+1    PRP    them
+1    PRP    they
+12   PRP    you
+7    PRP    we
+3    PRP    me
+1    PRP    none
+1    PRP    anyone
+
+
+# Possessive personal pronouns
+1    PRP$    her
+1    PRP$    his
+1    PRP$    its
+1    PRP$    their
+1    PRP$    my
+6    PRP$    your
+1    PRP$    mine
+1    PRP$    yourself
+
+# Adverbs.
+1    RB    again
+1    RB    already
+1    RB    currently
+1    RB    frequently
+1    RB    precisely
+1    RB    south
+1    RB    successfully
+1    RB    unfortunately
+1    RB    then
+2    RB    now
+
+# 'do'/'does'
+1    VB    do
+1    VBZ    does
+
+# 'to'
+1    TO    to
+
+# 'not'
+1    RB    not
+
+#-----VERBS--------
+# Verbs (third person singular present).
+# Note that only transitive verbs get our VerbT tag,
+# and some of those could also function as intransitives!
+1    VBZ    has
+1    VBZ    covers
+1    VBZ    is
+1    VBZ    drinks
+1    VBZ    carries
+1    VBZ    rides
+
+# More third person singular verbs.
+1    VBZ    speaks
+1    VBZ    grows
+1    VBZ    goes
+1    VBZ    migrates
+1    VBZ    suggests
+1    VBZ    knows
+
+# Verbs (base form).
+1    VB    have
+1    VB    speak
+1    VB    cover
+1    VB    be
+1    VB    ride
+1    VB    drink
+1    VB    grow
+1    VB    carry
+1    VB    suggest
+1    VB    migrate
+1    VB    know
+1    VB    bleed
+1    VB    blow
+1    VB    burn
+1    VB    call
+1    VB    become
+
+1    VB    put
+1    VB    sayin'
+1    VB    pull
+
+1    VB    tell
+1    VB    bite
+1    VB    move
+
+2    VB    see
+3    VB    go
+2    VB    feel
+2    VB    come
+1    VB    draw
+1    VB    fight
+1    VB    help
+1    VB    let
+1    VB    run
+1    VB    commune
+1    VB    mean
+1    VB    order
+1    VB    pass
+
+# Verbs (past tense).
+1    VBD    had
+1    VBD    spoke
+1    VBD    covered
+1    VBD    was
+1    VBD    were
+1    VBD    rode
+1    VBD    drank
+1    VBD    grew
+1    VBD    carried
+1    VBD    suggested
+1    VBD    migrated
+1    VBD    knew
+1    VBD    lobbed
+1    VBD    went
+1    VBD    did
+1    VBD    ratified
+
+# Verbs (present participles).
+1    VBG    having
+1    VBG    speaking
+1    VBG    covering
+1    VBG    being
+1    VBG    riding
+1    VBG    drinking
+1    VBG    growing
+1    VBG    carrying
+1    VBG    suggesting
+1    VBG    migrating
+1    VBG    knowing
+1    VBG    living
+2    VBG    fooling
+1    VBG    going
+
+# Verbs (past participle).
+1    VBN    had
+1    VBN    spoken
+1    VBN    covered
+1    VBN    been
+1    VBN    ridden
+1    VBN    drunk
+1    VBN    grown
+1    VBN    carried
+1    VBN    suggested
+1    VBN    migrated
+1    VBN    known
+1    VBN    moistened
+
+# Verbs (present, plural, third person).
+1    VBP    have
+1    VBP    speak
+1    VBP    cover
+1    VBP    are
+1    VBP    ride
+1    VBP    drink
+1    VBP    grow
+1    VBP    carry
+1    VBP    suggest
+1    VBP    migrate
+1    VBP    know
+1    VBP    am
+
+
+# Wh-determiners.
+1    WDT    that
+1    WDT    what
+1    WDT    which
+
+# Wh-pronouns.
+1    WDT    what
+1    WP    who
+
+# Wh possessive pronoun.
+1    WP$    whose
+
+# Wh-adverbs
+1    WRB    how
+1    WRB    when
+1    WRB    where
+1    WRB    why
+
+
+# Possessive marker.
+1    POS    's
+
+# Some additional words from Monty Python
+
+# Prefixes
+1    Misc    y'
+
+# Suffixes
+4    Misc    're
+4    Misc    'm
+1    Misc    'ow
+1    Misc    'd
+2    Misc    'll
+
+#interjection
+1     UH      oh
+1     UH      ah
+2     UH      well
+1     UH      thppppt
+
+#particle
+1     RP      around
+3     RP      away
+1     RP      off
+
+1    Misc    happy
+1    Misc    time-a
