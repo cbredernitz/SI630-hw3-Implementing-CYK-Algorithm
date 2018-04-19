@@ -1,0 +1,24 @@
+1	S	NP	VP
+1	S	VP	PP
+1	S	N	VP
+
+1	NP	N 	N
+1	NP	JJ	N
+
+1	VP	V 	N
+1	VP	V 	PP
+1	VP	V 	NP
+
+1	V 	run
+1	V 	read
+1	V 	eat
+1	V 	finish
+
+1	N 	I
+1	N 	people
+1	N 	fish
+1	N 	homework
+
+1	JJ	easy
+1	JJ	finished
+1	JJ	my

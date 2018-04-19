@@ -1,0 +1,40 @@
+Saw 7 terminal symbols in the lexicon
+     S                                 
+  ___|____________                      
+ |                VP                   
+ |         _______|_________            
+ |        VP                PP         
+ |    ____|___          ____|___        
+ |   |        NP       |        NP     
+ |   |     ___|___     |     ___|___    
+ NP  V   Det      N    P   Det      N  
+ |   |    |       |    |    |       |   
+she eats  a      fish with  a      fork
+
+-7.690286	(S
+  (NP she)
+  (VP
+    (VP (V eats) (NP (Det a) (N fish)))
+    (PP (P with) (NP (Det a) (N fork)))))
+              S                
+      ________|____             
+     |             VP          
+     |         ____|____        
+     NP       |         NP     
+  ___|___     |     ____|___    
+Det      N    V    N        N  
+ |       |    |    |        |   
+ a      fish eats fish     food
+
+-6.591674	(S (NP (Det a) (N fish)) (VP (V eats) (NP (N fish) (N food))))
+          S              
+  ________|___            
+ |            VP         
+ |    ________|___        
+ |   |            NP     
+ |   |         ___|___    
+ NP  V       Det      N  
+ |   |        |       |   
+she eats      a      fork
+
+-4.394449	(S (NP she) (VP (V eats) (NP (Det a) (N fork))))
